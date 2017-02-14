@@ -111,6 +111,17 @@ THE SOFTWARE.
                                     </foreign-key>
                                 </div>
                                 <!------------------------------------------------->
+                                <div ng-if="f.name == 'obj_importancia'" id="{{f.name}}-group" class="form-group">
+                                    <clabel wide="2" name="f.name" longname="f.longname" required="f.required"></clabel>
+                                    <div class="control col-sm-5">
+                                        <radiogroup 
+                                            required="f.required"
+                                            ide="bean[f.name].id"
+                                            tablereference="'importancia'"
+                                            field="'descripcion'">
+                                        </radiogroup>
+                                    </div>
+                                </div>
                             </div>
                             <div class="control-group text-right">
                                 <div class="controls">
